@@ -9,7 +9,6 @@ import {
   IconButton,
 } from "@mui/material";
 import huge from "../../assets/images/png/huge.png";
-import GoogleIcon from "@mui/icons-material/Google";
 import CloseIcon from "@mui/icons-material/Close";
 import {
   Image,
@@ -18,11 +17,8 @@ import {
   ImageButton,
   ImageMarked,
 } from "../../components";
-import axiosInstance from "../../api/axiosInstance";
-import { useCookies } from "react-cookie";
 
 export default function Login() {
-  const [cookies, setCookie] = useCookies(["access_token"]);
   const [open, setOpen] = React.useState(false);
 
   const googleAuth = () => {
